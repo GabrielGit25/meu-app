@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
     if (result != null) {
       setState(() {
-        _files = result.files;
+        _files = result;
       });
     }
   }
