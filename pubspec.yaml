@@ -1,5 +1,5 @@
 name: meu_app
-description: A simple Flutter app
+description: MP3 player local
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -9,7 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.6
+  just_audio: ^0.9.36
+  file_picker: ^6.1.1
+  permission_handler: ^11.0.1
 
 dev_dependencies:
   flutter_test:
