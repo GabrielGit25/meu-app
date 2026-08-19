@@ -140,9 +140,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                 : FontWeight.normal,
                           ),
                         ),
-                        subtitle: Text(
-                          '${(file.size / 1024 / 1024).toStringAsFixed(1)} MB',
-                        ),
                         onTap: () => _play(file),
                       );
                     },
