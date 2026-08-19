@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _isPlaying = false;
 
   Future<void> _pickFiles() async {
-    final result = await FilePicker.platform.pickFiles(
+    final result = await FilePicker.pickFiles(
       type: FileType.audio,
       allowMultiple: true,
     );

@@ -6,6 +6,14 @@ workflows:
       flutter: stable
       groups: []
     scripts:
+      - name: Generate fresh Android files
+        script: |
+          mkdir -p /tmp/project
+          cd /tmp/project
+          flutter create --org com.example --project-name meu_app .
+          cd /Users/builder/clone
+          rm -rf android
+          cp -r /tmp/project/android android
       - name: Install dependencies
         script: flutter pub get
       - name: Build APK
